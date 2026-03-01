@@ -1,18 +1,15 @@
-<section id="apps" class="section">
-  <h2>Our Apps</h2>
+<section id="projects" class="section">
+  <h2>Our Projects</h2>
   <div class="apps-grid">
-    <div class="card">
+    <a href="/projects" class="card card-link">
       <h3>Slackwater</h3>
       <p>
         A retirement planning tool that helps Canadians find financial
-        clarity. Plan your retirement timeline, optimize withdrawals across
-        RRSP, TFSA, and non-registered accounts, and get a clear picture of
-        when you can retire.
+        clarity. Plan your retirement timeline and optimize withdrawals
+        across RRSP, TFSA, and non-registered accounts.
       </p>
-      <a href="https://www.slackwater.ca" class="btn" target="_blank" rel="noopener">
-        Visit Slackwater
-      </a>
-    </div>
+      <span class="btn">Learn More</span>
+    </a>
   </div>
 </section>
 
@@ -37,5 +34,17 @@
   p {
     margin-bottom: 1.5rem;
     font-size: 1.05rem;
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.1s, box-shadow 0.1s;
+  }
+
+  .card-link:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 var(--color-shadow);
   }
 </style>
