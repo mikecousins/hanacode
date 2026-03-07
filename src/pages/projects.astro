@@ -23,12 +23,49 @@ import Footer from "../components/Footer.astro";
           RRSP, TFSA, and non-registered accounts. See when you can retire
           and how to make your money last.
         </p>
+      </div>
+
+      <div class="card">
+        <h2>The Problem</h2>
+        <p>
+          Canadian retirement planning is complex. The order in which you
+          withdraw from RRSP, TFSA, and non-registered accounts dramatically
+          affects your lifetime tax burden. CPP and OAS timing decisions can
+          mean tens of thousands of dollars in difference. And most retirement
+          calculators are built for the American market — they don't understand
+          Canadian registered accounts, our tax brackets, or our government
+          benefit programs.
+        </p>
+        <p>
+          Canadians deserve a retirement planning tool that speaks their
+          financial language.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>The Solution</h2>
+        <p>
+          Slackwater models your complete Canadian financial picture. It
+          optimizes withdrawal strategies across all your account types,
+          projects CPP and OAS benefits based on your chosen start dates, and
+          shows year-by-year retirement timelines so you can see exactly when
+          your money runs out — or doesn't.
+        </p>
+        <p>
+          Every calculation is built specifically for Canadian tax rules,
+          contribution limits, and benefit programs. No American assumptions,
+          no generic rules of thumb.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Key Features</h2>
         <div class="features">
           <div class="feature">
             <h3>Withdrawal Optimization</h3>
             <p>
               Smart strategies across registered and non-registered accounts
-              to minimize taxes and maximize income.
+              to minimize taxes and maximize income throughout retirement.
             </p>
           </div>
           <div class="feature">
@@ -39,13 +76,45 @@ import Footer from "../components/Footer.astro";
             </p>
           </div>
           <div class="feature">
+            <h3>CPP & OAS Modeling</h3>
+            <p>
+              Project your Canada Pension Plan and Old Age Security benefits.
+              See how delaying or starting early affects your total retirement
+              income.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Tax Projection</h3>
+            <p>
+              Year-by-year tax estimates using current federal and provincial
+              brackets, including OAS clawback thresholds and dividend tax
+              credits.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Scenario Comparison</h3>
+            <p>
+              Compare different retirement scenarios side by side. See how
+              changes to your retirement age, spending, or investment returns
+              affect your outcome.
+            </p>
+          </div>
+          <div class="feature">
             <h3>Canadian-Focused</h3>
             <p>
-              Built specifically for Canadian tax rules, CPP, OAS, and
-              registered account types.
+              Built specifically for Canadian tax rules, CPP, OAS, RRSP, TFSA,
+              and non-registered account types.
             </p>
           </div>
         </div>
+      </div>
+
+      <div class="card">
+        <h2>Available On</h2>
+        <p>
+          Slackwater is available on the web. An iOS app is coming soon to the
+          Apple App Store.
+        </p>
         <a
           href="https://www.slackwater.ca"
           class="btn"
@@ -54,6 +123,18 @@ import Footer from "../components/Footer.astro";
         >
           Visit Slackwater
         </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card coming-soon">
+        <h2>More Projects</h2>
+        <p>
+          We're actively developing new applications. Our focus remains on
+          building thoughtful, well-crafted tools that help Canadians with
+          financial planning and everyday productivity. Stay tuned.
+        </p>
+        <a href="/contact" class="btn btn-secondary">Get in Touch</a>
       </div>
     </section>
   </main>
@@ -85,6 +166,14 @@ import Footer from "../components/Footer.astro";
     color: var(--color-accent);
   }
 
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
   .project-card p {
     font-size: 1.05rem;
     margin-bottom: 1rem;
@@ -111,6 +200,11 @@ import Footer from "../components/Footer.astro";
   .feature p {
     font-size: 0.95rem;
     margin-bottom: 0;
+  }
+
+  .btn-secondary {
+    background: var(--color-card-bg);
+    color: var(--color-text);
   }
 
   @media (max-width: 768px) {

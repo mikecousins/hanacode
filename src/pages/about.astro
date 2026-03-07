@@ -1,0 +1,207 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+  title="About | Hana Code Corp"
+  description="Learn about Hana Code Corp, our mission, values, and the team behind our apps."
+>
+  <Header />
+  <main>
+    <section class="section hero">
+      <h1>About Us</h1>
+    </section>
+    <section class="section">
+      <div class="card">
+        <h2>Our Story</h2>
+        <p>
+          Hana Code Corp was founded in Calgary, Alberta with a clear purpose:
+          build software that helps Canadians plan for a better future. The name
+          "Hana" reflects growth and new beginnings — values that drive
+          everything we build.
+        </p>
+        <p>
+          We started with a simple observation: Canadian retirement planning
+          tools were either too complex, too expensive, or built for the
+          American market. Canadians deserve tools that understand RRSP, TFSA,
+          CPP, OAS, and our unique tax landscape. So we built Slackwater — a
+          retirement planning app designed from the ground up for Canadians.
+        </p>
+        <p>
+          Today, Hana Code Corp continues to develop thoughtful applications
+          that solve real problems with clarity and care.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Our Mission</h2>
+        <p>
+          To create thoughtful, well-crafted applications that simplify complex
+          problems. We believe great software should be clear, reliable, and
+          genuinely useful. Every app we ship is built with care, tested
+          thoroughly, and designed to respect the people who use it.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Our Values</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Simplicity</h3>
+            <p>
+              Complex problems deserve clear solutions. We strip away
+              unnecessary complexity so you can focus on what matters.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Privacy</h3>
+            <p>
+              Your data belongs to you. We design our apps to keep your
+              information secure and never sell your personal data to third
+              parties.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Quality</h3>
+            <p>
+              We ship fewer things, built better. Every feature is carefully
+              considered, thoroughly tested, and refined before it reaches you.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Canadian Focus</h3>
+            <p>
+              Built here, for here. Our financial tools are designed
+              specifically for Canadian tax law, retirement systems, and
+              registered account types.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Leadership</h2>
+        <h3 class="founder-name">Mike Cousins</h3>
+        <p class="founder-title">Founder & Developer</p>
+        <p>
+          Mike is a technology leader, architect, and developer who specializes
+          in crafting modern, simple, user-focused software. With deep expertise
+          in React, TypeScript, Remix, Swift, and Tailwind, he brings a
+          product-minded approach to every project.
+        </p>
+        <p>
+          An early-stage startup enthusiast with fractional CTO experience, Mike
+          has built software across a wide range of industries — from medical
+          imaging to fintech to consumer applications. This breadth of
+          experience informs the pragmatic, user-first approach that defines
+          Hana Code Corp.
+        </p>
+        <p>
+          Mike holds patents in adaptive scrolling for medical imaging and
+          distributed image rendering architectures — innovations that
+          demonstrate his ability to solve complex technical challenges with
+          elegant solutions.
+        </p>
+        <p class="location">Based in Calgary, Alberta, Canada.</p>
+      </div>
+
+      <div class="card">
+        <h2>Company Details</h2>
+        <p>
+          <strong>Hana Code Corp</strong><br />
+          Calgary, Alberta, Canada<br />
+          <a href="mailto:hana@cousins.ai">hana@cousins.ai</a>
+        </p>
+        <p>Incorporated in Canada.</p>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
+  .founder-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .founder-title {
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+  }
+
+  .location {
+    font-weight: 700;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .feature {
+    border-left: 4px solid var(--color-border);
+    padding-left: 1rem;
+  }
+
+  .feature h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+</style>
