@@ -1,0 +1,246 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+  title="Privacy Policy | Hana Code Corp"
+  description="Privacy Policy for Hana Code Corp and its applications."
+>
+  <Header />
+  <main>
+    <section class="section hero">
+      <h1>Privacy Policy</h1>
+      <p class="effective">Effective Date: March 1, 2026</p>
+    </section>
+    <section class="section">
+      <div class="card">
+        <h2>Introduction</h2>
+        <p>
+          Hana Code Corp ("we," "our," or "us") is a software company based in
+          Calgary, Alberta, Canada. We are committed to protecting your privacy
+          and being transparent about how we handle your information. This
+          Privacy Policy explains how we collect, use, and protect information
+          when you use our applications and services, including Slackwater.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Information We Collect</h2>
+        <p>
+          Our applications are designed with privacy in mind. The information we
+          collect depends on which app you use:
+        </p>
+        <div class="features">
+          <div class="feature">
+            <h3>Slackwater</h3>
+            <p>
+              Financial planning inputs you provide (account balances, income,
+              retirement age preferences, contribution amounts). This data is
+              used solely to generate your retirement projections and is stored
+              locally on your device wherever possible.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Account Information</h3>
+            <p>
+              If you create an account, we collect your email address to provide
+              account functionality and communicate with you about our services.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Usage Analytics</h3>
+            <p>
+              We may collect anonymized usage data to understand how our apps are
+              used and to improve the experience. This data does not personally
+              identify you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+          <li>Provide and maintain our applications and services</li>
+          <li>Generate financial projections and retirement planning calculations</li>
+          <li>Improve and optimize our apps based on usage patterns</li>
+          <li>Respond to your questions and support requests</li>
+          <li>Send important updates about our services when necessary</li>
+        </ul>
+        <p>
+          We do not sell, rent, or share your personal information with third
+          parties for marketing purposes.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Data Storage and Security</h2>
+        <p>
+          We take the security of your data seriously. Financial planning data in
+          Slackwater is stored locally on your device wherever possible. When
+          data is transmitted, it is encrypted in transit using
+          industry-standard TLS encryption.
+        </p>
+        <p>
+          We implement appropriate technical and organizational measures to
+          protect your information against unauthorized access, alteration,
+          disclosure, or destruction.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Third-Party Services</h2>
+        <p>
+          Our apps may use third-party services for functionality such as
+          analytics and crash reporting. These services have their own privacy
+          policies. Third-party services we may use include:
+        </p>
+        <ul>
+          <li>Apple App Store (for app distribution and in-app purchases)</li>
+          <li>Analytics services (for anonymized usage data)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Children's Privacy</h2>
+        <p>
+          Our applications are not directed at children under the age of 13. We
+          do not knowingly collect personal information from children. If we
+          become aware that we have collected information from a child under 13,
+          we will take steps to delete that information promptly.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Your Rights</h2>
+        <p>
+          In accordance with Canadian privacy law (PIPEDA) and applicable
+          provincial legislation, you have the right to:
+        </p>
+        <ul>
+          <li>Access the personal information we hold about you</li>
+          <li>Request correction of inaccurate information</li>
+          <li>Request deletion of your personal information</li>
+          <li>Withdraw consent for data processing</li>
+        </ul>
+        <p>
+          To exercise any of these rights, please contact us at
+          <a href="mailto:hana@cousins.ai">hana@cousins.ai</a>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. When we make
+          changes, we will update the "Effective Date" at the top of this page
+          and, where appropriate, notify you through our applications. We
+          encourage you to review this policy periodically.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Contact Us</h2>
+        <p>
+          If you have questions or concerns about this Privacy Policy or our
+          data practices, please contact us:
+        </p>
+        <p>
+          <strong>Hana Code Corp</strong><br />
+          Calgary, Alberta, Canada<br />
+          <a href="mailto:hana@cousins.ai">hana@cousins.ai</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .effective {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    opacity: 0.7;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .feature {
+    border-left: 4px solid var(--color-border);
+    padding-left: 1rem;
+  }
+
+  .feature h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+</style>

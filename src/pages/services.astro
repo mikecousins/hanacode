@@ -1,0 +1,208 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+  title="Services | Hana Code Corp"
+  description="What Hana Code Corp does: app development, Canadian financial tools, and our approach to building software."
+>
+  <Header />
+  <main>
+    <section class="section hero">
+      <h1>What We Do</h1>
+    </section>
+    <section class="section">
+      <div class="card">
+        <h2>App Development</h2>
+        <p>
+          We design, build, and maintain consumer applications focused on
+          financial planning and personal productivity. Our apps are built
+          natively for iOS and the web, with an emphasis on clarity, performance,
+          and privacy.
+        </p>
+        <p>
+          From concept through launch and ongoing maintenance, we handle every
+          stage of the product lifecycle. Our apps are available through the
+          Apple App Store and on the web.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Canadian Financial Tools</h2>
+        <p>
+          We specialize in building tools for the Canadian financial landscape.
+          Canada has a unique system of registered accounts, government benefits,
+          and tax rules that most financial software ignores or gets wrong.
+        </p>
+        <p>Our apps understand and properly model:</p>
+        <div class="features">
+          <div class="feature">
+            <h3>Registered Accounts</h3>
+            <p>
+              RRSP contribution room, TFSA limits, and the tax implications of
+              withdrawals from each account type.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Government Benefits</h3>
+            <p>
+              CPP and OAS eligibility, timing optimization, and how benefit
+              amounts change based on when you start receiving them.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Canadian Tax Rules</h3>
+            <p>
+              Federal and provincial tax brackets, OAS clawback thresholds, and
+              tax-efficient withdrawal ordering strategies.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Non-Registered Accounts</h3>
+            <p>
+              Capital gains treatment, dividend tax credits, and how
+              non-registered investments interact with registered accounts in
+              retirement.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Our Approach</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Privacy First</h3>
+            <p>
+              Financial data is sensitive. We design our apps to keep your data
+              on your device wherever possible. We never sell your information to
+              third parties.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Canadian-Built</h3>
+            <p>
+              Every feature is designed specifically for Canadian tax law and
+              retirement systems. No adapting American tools — built from the
+              ground up for Canada.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Clear Design</h3>
+            <p>
+              Complex financial concepts presented through clean, intuitive
+              interfaces. We make the complicated feel simple without
+              oversimplifying the results.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Continuous Improvement</h3>
+            <p>
+              Tax laws change. Contribution limits update. Government benefit
+              rules evolve. We keep our apps current with regular updates so your
+              projections stay accurate.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Technology</h2>
+        <p>
+          We build with modern, proven technologies: React, TypeScript, and
+          Swift for native iOS development. Our founder holds patents in
+          adaptive scrolling for medical imaging and distributed image rendering
+          architectures — a background in solving complex technical problems
+          that informs everything we build.
+        </p>
+        <p>
+          Our apps are designed for performance, accessibility, and reliability.
+          We test thoroughly across devices and screen sizes to ensure a
+          consistent experience for every user.
+        </p>
+      </div>
+
+      <div class="card cta-card">
+        <h2>See Our Work</h2>
+        <p>
+          Explore our current projects and see how we put these principles into
+          practice.
+        </p>
+        <a href="/projects" class="btn">View Projects</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .feature {
+    border-left: 4px solid var(--color-border);
+    padding-left: 1rem;
+  }
+
+  .feature h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+</style>

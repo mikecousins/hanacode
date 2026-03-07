@@ -5,7 +5,11 @@
       Have a question, feedback about one of our apps, or want to work with
       us? We'd love to hear from you.
     </p>
-    <a href="mailto:hana@cousins.ai" class="btn">Contact Us</a>
+    <p class="location">Based in Calgary, Alberta, Canada.</p>
+    <div class="contact-actions">
+      <a href="mailto:hana@cousins.ai" class="btn">Email Us</a>
+      <a href="/contact" class="btn btn-secondary">Contact Info</a>
+    </div>
   </div>
 </section>
 
@@ -20,5 +24,20 @@
     margin-bottom: 1.5rem;
     font-size: 1.05rem;
     max-width: 500px;
+  }
+
+  .location {
+    font-weight: 700;
+  }
+
+  .contact-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-secondary {
+    background: var(--color-card-bg);
+    color: var(--color-text);
   }
 </style>
